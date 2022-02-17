@@ -8,7 +8,7 @@ class Window(QWidget):
 
         self.setGeometry(200, 200, 700, 400)
         self.setWindowTitle("PyQt6 QLCDNumber")
-        self.setWindowIcon(QIcon('../Image/python.png'))
+        self.setWindowIcon(QIcon('Image/python.png'))
 
         timer = QTimer()
         timer.timeout.connect(self.show_lcd)
@@ -33,8 +33,8 @@ class Window(QWidget):
 if __name__ == "__main__":
     import sys
     app = QApplication([])
-    app.setWindowIcon(QIcon('../Image/python.png'))
+    app.setWindowIcon(QIcon('Image/python.png'))
     window = Window()
     window.show()
 
-    app.exec(app.exec())
+    sys.exit(app.exec())

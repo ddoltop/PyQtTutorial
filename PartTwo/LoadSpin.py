@@ -23,8 +23,8 @@ class UI(QWidget):
 if __name__ == "__main__":
     import sys
     app = QApplication([])
-    app.setWindowIcon(QIcon('../Image/python.png'))
+    app.setWindowIcon(QIcon('Image/python.png'))
     window = UI()
     window.show()
 
-    app.exec(app.exec())
+    sys.exit(app.exec())

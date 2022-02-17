@@ -8,7 +8,7 @@ class Window(QWidget):
 
         self.setGeometry(200, 200, 700, 400)
         self.setWindowTitle("PyQt6 QSpinBox")
-        self.setWindowIcon(QIcon('../Image/python.png'))
+        self.setWindowIcon(QIcon('Image/python.png'))
 
         hbox = QHBoxLayout()
         label = QLabel("Laptop Price: ")
@@ -40,8 +40,8 @@ class Window(QWidget):
 if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon('../Image/python.png'))
+    app.setWindowIcon(QIcon('Image/python.png'))
     window = Window()
     window.show()
 
-    app.exec(app.exec())
+    sys.exit(app.exec())
