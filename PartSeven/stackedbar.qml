@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Controls
-import QtCharts
+import QtCharts 2.0
 
 ApplicationWindow {
     visible:true
