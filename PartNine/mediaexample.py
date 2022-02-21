@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, \
     QHBoxLayout, QVBoxLayout, QStyle, QSlider, QLabel, QFileDialog
 from PyQt6.QtGui import QIcon
-from PyQt6.QtMultimedia import QMediaPlayer, QMediaMetaData
+from PyQt6.QtMultimedia import QMediaPlayer
 from PyQt6.QtMultimediaWidgets import QVideoWidget
 from PyQt6.QtCore import Qt, QUrl
 
@@ -47,7 +47,6 @@ class Window(QWidget):
         self.mediaplayer.mediaStatusChanged.connect(self.mediastate_changed)
         self.mediaplayer.positionChanged(self.position_change)
         self.mediaplayer.durationChanged.connect(self.duration_changed)
-
 
     def open_file(self):
         filename, _ = QFileDialog.getOpenFileName(self, "Open Video")
